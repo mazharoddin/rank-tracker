@@ -1,0 +1,14 @@
+.header-icon {
+  background-color: #e6e6e6;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #4D4D4D;
+}
+
+.header-img img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
