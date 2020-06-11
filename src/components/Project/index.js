@@ -20,37 +20,37 @@ export default function Project(props) {
       </Row>
       <hr></hr>
       <Row>
-        <Col sm={2}>
+        <Col xs={6} sm={4} md={2} lg={2}>
           <p><span>Average Position</span> <FontAwesomeIcon icon={faQuestionCircle} /></p>
           <p>
-            <span className="h6 text-dark">{props.details.averagePosition.value}</span>&nbsp;
+            <span className="h6 font-weight-bold text-dark">{props.details.averagePosition.value}</span>&nbsp;
             <span className={props.details.averagePosition.change[0] === '+' ? 'text-success' : 'text-danger'}><strong>{props.details.averagePosition.change}</strong></span>
           </p>
         </Col>
-        <Col sm={2}>
+        <Col xs={6} sm={4} md={2} lg={2}>
           <p><span>Keywords</span> <FontAwesomeIcon icon={faQuestionCircle} /></p>
-          <p className="h6 text-dark">{props.details.keywords}</p>
+          <p className="h6 font-weight-bold text-dark">{props.details.keywords}</p>
         </Col>
-        <Col sm={2}>
+        <Col xs={6} sm={4} md={2} lg={2}>
           <p><span>SERP</span> <FontAwesomeIcon icon={faQuestionCircle} /></p>
-          <p className="h6 text-dark">{props.details.serp}</p>
+          <p className="h6 font-weight-bold text-dark">{props.details.serp}</p>
         </Col>
-        <Col sm={2}>
+        <Col xs={6} sm={4} md={2} lg={2}>
           <p><span>Positions</span> <FontAwesomeIcon icon={faQuestionCircle} /></p>
-          <p className="h6 text-dark"><FontAwesomeIcon className="text-success" icon={faLongArrowAltUp} /> {props.details.positions.up} &nbsp;&nbsp; <FontAwesomeIcon className="text-danger" icon={faLongArrowAltDown} /> {props.details.positions.down}</p>
+          <p className="h6 font-weight-bold text-dark"><FontAwesomeIcon className="text-success" icon={faLongArrowAltUp} /> {props.details.positions.up} &nbsp;&nbsp; <FontAwesomeIcon className="text-danger" icon={faLongArrowAltDown} /> {props.details.positions.down}</p>
         </Col>
-        <Col sm={2}>
+        <Col xs={6} sm={4} md={2} lg={2}>
           {
             props.details.history.map((history, key) =>
               <Row key={key}>
-                <Col sm="6" className="p-1">{history.name}</Col>
-                <Col sm="3" className="p-1">{history.up}</Col>
-                <Col sm="3" className={key === 1 ? 'text-success p-1' : key === 2 ? 'text-danger p-1' : 'p-1'}>{history.down}</Col>
+                <Col sm="6" md="6" lg="6" className="p-1">{history.name}</Col>
+                <Col sm="3" md="3" lg="3" className="p-1">{history.up}</Col>
+                <Col sm="3" md="3" lg="3" className={key === 1 ? 'text-success p-1' : key === 2 ? 'text-danger p-1' : 'p-1'}>{history.down}</Col>
               </Row>
             )
           }
         </Col>
-        <Col sm={2}>
+        <Col xs={6} sm={4} md={2} lg={2}>
           <p><span>Location</span> <FontAwesomeIcon icon={faQuestionCircle} /></p>
           <div>
             <ReactCountryFlag
