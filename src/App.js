@@ -1,7 +1,11 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import Controls from './components/Controls';
 import ProjectList from './components/ProjectList';
+import Heading from './components/Heading';
+import Notification from './components/Notification';
 import './App.css';
-import { Container } from 'reactstrap';
+import Sidebar from './components/Sidebar';
 
 const projects = [
   {
@@ -116,8 +120,20 @@ const projects = [
 
 function App() {
   return (
-    <Container>
-      <ProjectList projects={projects}></ProjectList>
+    <Container fluid>
+      <Row>
+        <Col sm="2" style={{ backgroundColor: '#1C2742' }}>
+          <Sidebar></Sidebar>
+        </Col>
+        <Col sm="10" className="p-0">
+          <Notification></Notification>
+          <Heading className="pt-3 pl-5 pr-5 mb-4"></Heading>
+          <div className="pl-5 pr-5">
+            <Controls></Controls>
+            <ProjectList projects={projects}></ProjectList>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }
