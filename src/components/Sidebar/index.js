@@ -53,8 +53,8 @@ export default function Sidebar(props) {
           <img src="logo.svg" alt="Logo"/>
         </Col>
         {
-          menu.map(menu => (
-            <Col sm={12} className="mt-4">
+          menu.map((menu, key) => (
+            <Col sm={12} className="mt-4" key={key}>
               <Row>
                 <Col sm={1} xs={1}>
                   <FontAwesomeIcon icon={menu.icon} />
