@@ -7,10 +7,10 @@ import './index.css';
 
 export default function Heading(props) {
   return (
-    <Card className={`p-3 ${props.className}`}>
+    <Card className={`${props.className}`} style={{borderRadius: '0rem 0rem 0.25rem 0.25rem' }}>
       <Row>
         <Col sm={4}>
-          <span class="h5 text-dark">Rank Tracker</span> <FontAwesomeIcon icon={faQuestionCircle} /> How it works
+          <span className="h5 text-dark">Rank Tracker</span> <FontAwesomeIcon icon={faQuestionCircle} /> How it works
       </Col>
         <Col sm={{ size: 7, offset: 1 }} className="text-right">
           <FormGroup>
