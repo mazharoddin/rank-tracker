@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rank-tracker/static/css/main.c8081a5f.chunk.css",
+    "main.js": "/rank-tracker/static/js/main.856c7950.chunk.js",
+    "main.js.map": "/rank-tracker/static/js/main.856c7950.chunk.js.map",
+    "runtime-main.js": "/rank-tracker/static/js/runtime-main.7a674801.js",
+    "runtime-main.js.map": "/rank-tracker/static/js/runtime-main.7a674801.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/rank-tracker/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.f929beec.chunk.js": "/rank-tracker/static/js/2.f929beec.chunk.js",
+    "static/js/2.f929beec.chunk.js.map": "/rank-tracker/static/js/2.f929beec.chunk.js.map",
+    "index.html": "/rank-tracker/index.html",
+    "precache-manifest.6de583a5181c5da8fedcf9d72ed52258.js": "/rank-tracker/precache-manifest.6de583a5181c5da8fedcf9d72ed52258.js",
+    "service-worker.js": "/rank-tracker/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/rank-tracker/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.c8081a5f.chunk.css.map": "/rank-tracker/static/css/main.c8081a5f.chunk.css.map",
+    "static/js/2.f929beec.chunk.js.LICENSE.txt": "/rank-tracker/static/js/2.f929beec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a674801.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.f929beec.chunk.js",
+    "static/css/main.c8081a5f.chunk.css",
+    "static/js/main.856c7950.chunk.js"
+  ]
+}
